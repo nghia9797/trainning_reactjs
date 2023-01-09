@@ -1,0 +1,16 @@
+{
+  "header": {
+    "name": {
+      "title": "Name"
+    },
+    "brand": {
+      "title": "Brand"
+    },
+    "madein": {
+      "title": "Made In"
+    },
+    "price": {
+      "title": "Price"
+    }
+  }
+}

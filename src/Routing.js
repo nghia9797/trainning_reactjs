@@ -1,6 +1,9 @@
 import React from "react";
-import { BrowserRouter, Router, Switch } from "react-router-dom";
+import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
 import { PrivateRoute } from "./features/PrivateRoute";
+import ListProduct from "./features/product/ListProduct";
+import TopPage from "./features/top/TopPage";
+import ListUser from "./features/user/ListUser";
 import { routes } from "./routes";
 
 export const Routing = () => {
@@ -20,7 +23,11 @@ export const Routing = () => {
 
   return (
     <BrowserRouter>
-      <Switch>{routing}</Switch>
+      {/* <Switch>{routing}</Switch> */}
+      
+      <Route path='/' exact component={TopPage} />
+      <Route path='/products'  component={ListProduct}/>
+      <Route path='/users' component={ListUser}/>
     </BrowserRouter>
   );
 };
